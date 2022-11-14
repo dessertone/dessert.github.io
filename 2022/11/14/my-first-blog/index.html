@@ -7,7 +7,18 @@
   <meta name="author" content="John Doe" />
 
   
-  <meta name="description" content="博客搭建注意事项" />
+  <meta name="description" content="博客搭建注意事项1.上传博客到github
+首先新建一个博客文件
+
+1$ hexo new [layout]&amp;lt;title&amp;gt; 
+
+   layout: post (默认), draft, page
+
+​		也可以自定义，参考官方文档
+
+编辑完成后生成静态文件
+
+12$ hexo g$ he" />
   
 
   
@@ -73,7 +84,28 @@
     </header>
     <div class="entry">
       
-        <h1 id="博客搭建注意事项"><a href="#博客搭建注意事项" class="headerlink" title="博客搭建注意事项"></a>博客搭建注意事项</h1>
+        <h1 id="博客搭建注意事项"><a href="#博客搭建注意事项" class="headerlink" title="博客搭建注意事项"></a>博客搭建注意事项</h1><h3 id="1-上传博客到github"><a href="#1-上传博客到github" class="headerlink" title="1.上传博客到github"></a>1.上传博客到github</h3><ul>
+<li>首先新建一个博客文件</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo new [<span class="type">layout</span>]&lt;title&gt; </span><br></pre></td></tr></table></figure>
+
+<pre><code>   layout: post (默认), draft, page
+</code></pre>
+<p>​		也可以自定义，参考<a target="_blank" rel="noopener" href="https://hexo.io/docs/writing">官方文档</a></p>
+<ul>
+<li>编辑完成后生成静态文件</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo g</span><br><span class="line"><span class="variable">$</span> hexo generate</span><br></pre></td></tr></table></figure>
+<ul>
+<li>最后上传至github</li>
+</ul>
+<p>下载依赖 hexo-deployer-git</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> npm install hexo<span class="literal">-deployer-git</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>然后就可以一键部署啦</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo d</span><br></pre></td></tr></table></figure>
+<p>网站刷新即可</p>
+
       
     </div>
     
